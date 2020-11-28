@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /*.example {background: orange;}*/
+  .nav-logo-img{
+    margin: 20px;
+    padding-left: 50px;
+  }
+
+  .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  /*margin-left: 7rem;*/
+  padding-left: 4%;
+  padding-top: 1.8%;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.careerup-logo{
+  width: 16%;
+  float: left;
+  padding-top: 1%;
+  padding-left: 5%;
+}
+
+.button {
+        background-color: #333;
+        border: solid gray;
+        border-width: 1.5px;
+        color: #C0C0C0;
+        /*padding: 16px 32px;*/
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        /*margin: 4px 2px;*/
+        /*transition-duration: 0.4s;*/
+        cursor: pointer;      
+      }
+
+    .button:hover{
+          border: solid white;
+          border-width: 1.5px;
+          color: white;
+    }
+
+    .btn-login{
+      border-radius: 4px;
+      padding: 12px 28px;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /*.example {background: pink;}*/
+ 	.nav-logo-img{
+    margin: 20px;
+    padding-left: 50px;
+  }
+
+  .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  /*margin-left: 7rem;*/
+  padding-left: 6%;
+  padding-top: 1.8%;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.careerup-logo{
+  width: 16%;
+  float: left;
+  padding-top: 1%;
+  padding-left: 5%;
+}
+
+.button {
+        background-color: #333;
+        border: solid gray;
+        border-width: 1.5px;
+        color: #C0C0C0;
+        /*padding: 16px 32px;*/
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        /*margin: 4px 2px;*/
+        /*transition-duration: 0.4s;*/
+        cursor: pointer;      
+      }
+
+    .button:hover{
+          border: solid white;
+          border-width: 1.5px;
+          color: white;
+    }
+
+    .btn-login{
+      border-radius: 4px;
+      padding: 12px 28px;
+    }
+   
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav" >
+    <img class="careerup-logo" src="careerup-logo.png" onclick=" location.href='index-careerup.html' ">
+    	<div >
+         <a href="#myPopularJobCategories" id="topnav-1">Categories</a>
+         <a href="#myHowItWorks">How It work</a>
+        <a href="#myCities">Cities</a>
+        <a href="#myFooter">About Us</a>
+        <a href="#"><i class="fa fa-bell"></i></a>
+        <a href="login-page.html">
+          <button type="button" class="button btn-login"><div class="login-text">Login/Register</div></button>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+  </div> 
+
+
+<script type="text/javascript">
+	  function myFunction() {
+     var x = document.getElementById("myTopnav");
+      var y = document.getElementById("myBgImg");
+      var z = document.getElementById("myPopularJobCategories");
+      if (x.className === "topnav") {
+        x.className += "responsive";
+        // x.className.addClass("topnav responsive");
+        // y.className += " responsive";
+        // z.className += " responsive";
+      } else {
+        x.className = "topnav";
+        // y.className = "bg-img";
+        // z.className = "popular-job-categories";
+      }
+    }
+
+
+    $(function() {
+  $("body").click(function(e) {
+    if (e.target.id == "myTopnav" || $(e.target).parents("myTopnav").length) {
+        
+    } else {
+          $('.inner-body').click(function(e) {
+          if ($('.topnav responsive').hasClass('.topnav responsive')) {
+          	console.log("Hello1");
+            $(".topnav responsive").toggleClass('.topnav')
+            console.log("Hello");
+          }
+        })
+    }
+  });
+})
+</script>
+</body>
+</html>

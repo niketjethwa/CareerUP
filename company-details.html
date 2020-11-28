@@ -1,0 +1,2561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Career Up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+</head>
+<style type="text/css">
+
+
+
+
+
+  .nav-logo-img{
+    margin: 20px;
+    padding-left: 50px;
+  }
+
+  .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 8%;
+  padding-top: 1.8%;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.careerup-logo{
+  width: 16%;
+  float: left;
+  padding-top: 1%;
+  padding-left: 5%;
+}
+
+.button {
+        background-color: #333;
+        border: solid gray;
+        border-width: 1.5px;
+        color: #C0C0C0;
+        /*padding: 16px 32px;*/
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        /*margin: 4px 2px;*/
+        /*transition-duration: 0.4s;*/
+        cursor: pointer;      
+      }
+
+    .button:hover{
+          border: solid white;
+          border-width: 1.5px;
+          color: white;
+    }
+
+    .btn-login{
+      border-radius: 4px;
+      padding: 12px 28px;
+    }
+
+    .filter-sidebar{
+      /*height: auto;*/
+      height: 1100px;
+    }
+  .footer{
+          background-color: #333; 
+          height: 380px;
+          bottom: 0;
+    }
+
+    .footer h4{
+      float: center;
+      margin-left: 50px;
+      margin-top: 50px;
+      font-size: 22px;
+      color:white;
+    }
+
+    .footer-content{
+      padding-left: 50px;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .footer-content a{
+      text-decoration: none;
+    }
+
+
+    .footer-content a:hover{
+      color: white;
+      text-decoration: underline;
+    }
+
+    .footer a{
+      color: gray;
+    }
+
+    .footer-newletter p{
+        margin-left: 50px; 
+        color: white;
+        width: 280px;
+      }
+
+      .email-text{
+        background-color: black;
+        color:white; 
+        padding: 5px;
+        border-radius: 4px;
+        margin-left: 50px;
+        height: 35px;
+        width: 65%; 
+    }
+
+    .email-send-btn{
+    background-color: #78AB46;
+    height: 35px; 
+    width: 44px;
+     border-radius: 4px;
+  }
+
+  .footer-flex {
+  display:flex;
+  }
+.footer-flex div {
+  flex:1;
+  /*margin:5px;  need some space ?*/
+  }
+
+  .footer-bottom-flex {
+  display:flex;
+  border-top: 1px solid gray;
+  }
+.footer-bottom-flex div {
+  flex:1;
+  /*margin:5px;  need some space ?*/
+  }
+
+
+
+  .footer-bottom-img{
+    padding-left: 50px;
+    padding-top: 10px;
+  }
+
+  .footer-bottom-flex #follow-us{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .social-media-icon a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        text-align: center;
+        display: inline-block;
+        color: #707070;
+        background: #353535;
+        border-radius: 4px;
+      /*    -webkit-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;*/
+      }
+
+      .social-media-icon ul{
+        display: inline-block;
+        padding: 10px;
+      }
+
+          .social-media-icon li{
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+        .social-media-icon a:hover{
+          background: white;
+          color: black;
+        }
+
+        #copyright{
+          color: white;
+          font-size: 14px;
+          text-align: center;
+          padding-top: 30px;
+          padding-right: 25px;
+        }
+
+
+      #top-up-button {
+        display: inline-block;
+        /*background-color: #FF9800;*/
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        visibility: hidden;
+      }
+
+      #top-up-button::after {
+        content: url("top-up-rocket-icon.png");
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        /*color: #fff;*/
+        color: green;
+      }
+      
+      #top-up-button:hover {
+        cursor: pointer;
+      }
+      
+      #top-up-button:active {
+        /*background-color: #555;*/
+      }
+      
+      #top-up-button.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+        .container2{
+          margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 90%;
+      margin-bottom: 5%;
+      /*max-width: 100%;*/
+    }
+    
+
+      .job-detail-header{
+        padding: 20px 0;
+        position: relative;
+        z-index: 1;
+        padding: 80px 0 50px;
+      }
+
+      .flex-middle-sm {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.flex-middle {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.job-detail-thumbnail {
+    padding: 40px 20px;
+    width: 190px;
+}
+
+.job-detail-header .link-more {
+    margin-top: 10px;
+}
+
+.left-inner{
+  height: auto;
+}
+
+.job-detail-header .inner-info {
+    padding-left: 30px;
+}
+
+
+.job-detail-header .job-detail-title {
+    font-size: 25px;
+    margin: 0 0 5px;
+    line-height: 1.1;
+}
+
+.text-theme {
+    color: #82b440 !important;
+    font-weight: 700;
+    padding-left: 1%;
+    text-decoration: none;
+}
+
+.job-detail-header .job-metas {
+    margin-top: 10px;
+}
+
+.job-metas > div {
+    display: inline-block;
+    margin-right: 25px;
+}
+.job-metas > div:last-child {
+    margin-right: 0;
+}
+
+.job-detail-buttons .deadline-time {
+    color: #82b440;
+}
+
+.job-detail-buttons [class*="deadline"] {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 0 10px;
+    margin-top: 5%;
+}
+
+
+.btn-apply{
+  background-color: #82B440;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 14px 10px;
+    width: 100%;
+}
+
+
+.btn-link-job{
+  text-decoration: none;
+  color: black;
+}
+
+.btn-link-job:hover{
+  text-decoration: none;
+  color: #82B440;
+}
+
+.btn-apply:hover{
+  background-color: #5f842e;
+  text-decoration: none;
+  color: white;
+}
+
+
+.widget {
+    margin-bottom: 30px;
+    position: relative;
+    padding: 0px;
+    background: transparent;
+}
+
+.job-single-v3 .job-detail-detail.in-sidebar {
+    background: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.09);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.09);
+}
+
+
+.job-detail-detail.in-sidebar {
+    padding: 25px;
+    background: #fafafa;
+}
+
+.job-detail-detail .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.job-detail-detail .list li {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.job-detail-detail .icon {
+    color: #82b440;
+    font-size: 30px;
+    float: left;
+}
+
+.job-detail-detail .details {
+    padding-left: 60px;
+}
+
+.job-detail-detail .text {
+    font-size: 16px;
+    color: #221f1f;
+}
+
+ .job-detail-detail .value {
+    font-size: 15px;
+}
+
+.widget-job-detail-social {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.09);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.09);
+    padding: 15px 50px;
+}
+
+.apus-social-share {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.apus-social-share a {
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    display: inline-block;
+    width: 36px;
+    height: 40px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    color: #b6b6b6;
+    /*padding-left: 16%;*/
+}
+
+.apus-social-share a:hover, .widget-job-detail-social .apus-social-share a:focus {
+    color: #fff;
+    background: #bababa;
+}
+
+
+.socials-apply .title {
+    text-align: center;
+    margin: 0 0 12px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5%;
+    text-transform: uppercase;
+} 
+
+.socials-apply .inner {
+    margin-left: -7px;
+    margin-right: -7px;
+}
+
+.socials-apply .inner > div {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-bottom: 14px;
+    width: 50%;
+    float: left;
+}
+
+
+.socials-apply .inner a {
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+.socials-apply .facebook-apply-btn {
+    background: #3b5999;
+}
+
+.socials-apply .google-apply-btn {
+    background: #dd4b39;
+}
+
+.socials-apply .linkedin-apply-btn {
+    background: #0077B5;
+}
+
+.socials-apply .twitter-apply-btn {
+    background: #55acee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {
+        display: none;
+        padding: 4%;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+
+          .container2{
+          margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      z-index: 1;
+      padding-right: 15px;
+      /*max-width: 100%;*/
+    }
+
+    .container2-inner-div{
+      padding: 0px;
+    }
+    
+
+      .job-detail-header{
+        padding: 20px 0;
+        position: relative;
+        z-index: 1;
+        padding: 80px 0 50px;
+      }
+
+      .flex-middle-sm {
+    display: block;
+    align-items: center;
+}
+
+
+.flex-middle {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.job-detail-thumbnail {
+    padding: 40px 20px;
+    width: 150px;
+}
+
+.job-detail-header .link-more {
+    margin-top: 10px;
+}
+
+.left-inner{
+  height: auto;
+}
+
+.job-detail-header .inner-info {
+    padding-left: 0px;
+}
+
+
+.job-detail-header .job-detail-title {
+    font-size: 20px;
+    margin: 0 0 5px;
+    line-height: 1.1;
+}
+
+.text-theme {
+    color: #82b440 !important;
+    font-weight: 700;
+    padding-left: 1%;
+    font-size: 13px;
+}
+
+.job-detail-header .job-metas {
+    margin-top: 10px;
+}
+
+.job-metas > div {
+    display: inline-block;
+    margin-right: 25px;
+}
+.job-metas > div:last-child {
+    margin-right: 0;
+}
+
+.job-detail-buttons{
+  margin-top: 5%;
+}
+
+.job-detail-buttons .deadline-time {
+    color: #82b440;
+}
+
+.job-detail-buttons [class*="deadline"] {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 0 10px;
+    margin-top: 5%;
+}
+
+
+.btn-apply{
+  background-color: #82B440;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 14px 10px;
+    width: 100%;
+}
+
+.widget-job-detail-social {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.09);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.09);
+    padding: 15px 13px;
+}
+
+
+
+  
+
+    }
+
+
+
+
+    @media only screen and (max-width: 600px) {
+      
+      .topnav{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 99;
+        background-color: #333;
+      }
+      .topnav.responsive {position: relative;}
+      
+      .filter-sidebar.responsive{
+        /*margin-top: -15%;*/
+      }
+      .careerup-logo{
+        width: 35%;
+        padding-top: 2%;
+        display: inline;
+      }
+
+      .topnav.responsive .careerup-logo{
+        display: none;
+      }
+
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        margin: 5%;
+      }
+
+      .button:hover{
+        display: none;
+      }
+
+      a .btn-login{
+        padding: 10px;
+        border-width: thin;
+      }
+
+    
+
+    .footer{
+      height: 100%;
+    }
+
+    .footer-flex{
+      display: inline;
+    }
+
+    .footer-flex h4{
+      padding-top: 8%;
+      padding-left: 12%;
+      font-size: 28px;
+      text-align: left;
+      margin: auto;
+    }
+
+    .footer-newletter p{
+        margin-left: 12%; 
+        color: #9E9E9E;
+        width: 80%;
+        font-size: 16px;
+        padding-top: 1%;
+      }
+
+    .footer-job-by{
+      display: none;
+    }
+
+    .email-text{
+        background-color: black;
+        color:white; 
+        padding: 5px;
+        border-radius: 4px;
+        margin-left: 12%;
+        height: 40px;
+        width: 65%; 
+    }
+
+      .email-send-btn{
+      background-color: #78AB46;
+      height: 40px; 
+      width: 44px;
+       border-radius: 4px;
+    }
+
+
+    .footer-bottom-flex{
+      display: inline;
+    }
+    
+    .footer-bottom-flex .footer-bottom-img{
+      border-top: 1px solid gray;
+    }
+
+
+    .footer-bottom-flex #follow-us{
+      text-align: left;
+      padding-left: 12%;
+    }
+
+    .social-media-icon ul{
+      text-align: center;
+      /*background-color: red;*/
+      margin-left: 20%;
+    }
+
+    .social-media-icon a:hover{
+      display: none;
+    }
+
+    #copyright{
+      margin: auto;
+      padding: 0px;
+      padding-bottom: 5%;
+      text-align: center;
+    }
+
+    #top-up-button {
+      margin: 30px;
+    }
+
+    #top-up-button::after {
+        content: url("top-up-rocket-icon.png");
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+        margin-left: 140%;
+      }
+
+     
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width:600px) and (max-width: 1200px) {
+  .topnav {
+  overflow: hidden;
+  background-color: #333;
+  width: 155%;
+}
+
+.topnav a {
+  margin: 2%;
+  margin-left: 2%;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.careerup-logo{
+      width: 21%;
+    float: left;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
+.button {
+        background-color: #333;
+        border: 0.3px solid gray;
+        color: #C0C0C0;
+        /*padding: 16px 32px;*/
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        /*margin: 4px 2px;*/
+        /*transition-duration: 0.4s;*/
+        cursor: pointer;      
+      }
+
+    .button:hover{
+          border: 0.3px solid white;
+          color: white;
+    }
+
+
+  .footer{
+      background-color: #333;
+      width: 155%; 
+      /*height: 590px;*/
+      height: 100%;
+
+    }
+
+    .footer h4{
+      float: center;
+      margin-left: 50px;
+      margin-top: 50px;
+      font-size: 22px;
+      color:white;
+    }
+
+    .footer-content{
+      padding-left: 50px;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .footer-content a{
+      text-decoration: none;
+    }
+
+    .footer a{
+      color: gray;
+    }
+
+    .footer-newletter p{
+        margin-left: 50px; 
+        color: white;
+        width: 280px;
+      }
+
+      .email-text{
+        background-color: black;
+        color:white; 
+        padding: 5px;
+        border-radius: 4px;
+        margin-left: 50px;
+        height: 35px;
+        width: 65%; 
+    }
+
+    .email-send-btn{
+    background-color: #78AB46;
+    height: 35px; 
+    width: 44px;
+     border-radius: 4px;
+  }
+
+  .footer-flex {
+  display:flex;
+  }
+.footer-flex div {
+  flex:1;
+  /*margin:5px;  need some space ?*/
+  }
+
+  .footer-bottom-flex {
+  display:flex;
+  border-top: 1px solid gray;
+  }
+.footer-bottom-flex div {
+  flex:1;
+  /*margin:5px;  need some space ?*/
+  }
+
+
+
+  .footer-bottom-img{
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .footer-bottom-flex #follow-us{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .social-media-icon a {
+        width: 30px;
+        height: 30px;
+        line-height: 40px;
+        font-size: 16px;
+        text-align: center;
+        display: inline-block;
+        color: #707070;
+        background: #353535;
+        border-radius: 4px;
+      /*    -webkit-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;*/
+      }
+
+      .social-media-icon ul{
+        display: inline-block;
+        /*padding: 10px;*/
+      }
+
+          .social-media-icon li{
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+        .social-media-icon a:hover{
+          background: white;
+          color: black;
+        }
+
+        #copyright{
+          color: white;
+          font-size: 14px;
+          text-align: center;
+          padding-top: 30px;
+          padding-right: 25px;
+        }
+
+
+      #top-up-button {
+        display: inline-block;
+        /*background-color: #FF9800;*/
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        visibility: hidden;
+      }
+
+      #top-up-button::after {
+        content: url("top-up-rocket-icon.png");
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        /*color: #fff;*/
+        color: green;
+        margin-left: 40%;
+      }
+      
+      #top-up-button:hover {
+        cursor: pointer;
+      }
+      
+      #top-up-button:active {
+        /*background-color: #555;*/
+      }
+      
+      #top-up-button.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+       .card {
+      background-color: white;
+      border-radius: 14px;
+      /*padding: 1rem 2rem;*/
+      /*min-width: 250px;*/
+      /*max-width: 630px;*/
+      box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
+      /*width: 150%;*/
+      width: auto;
+      transition: all 0.6s;
+      /*margin: 2.5rem 1rem;*/
+      }
+
+      .cards{
+        margin-left: 30%;
+        width: 140%;
+      }
+
+      .search-block{
+        margin-left: 30%;
+        width: 120%;
+      }
+
+
+        .container2{
+          margin-right: auto;
+          /*background-color: pink;*/
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 155%;
+    }
+      .col-sm-8{
+        /*background-color: pink;*/
+        width: 200%;
+        padding-left: 4%;
+      }
+      .job-detail-header{
+        padding: 20px 0;
+        position: relative;
+        z-index: 1;
+        padding: 80px 0 50px;
+      }
+
+      .flex-middle-sm {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.flex-middle {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.job-detail-thumbnail {
+    padding: 40px 20px;
+    width: 190px;
+}
+
+.job-detail-header .link-more {
+    /*margin-top: 10px;*/
+    font-size: 18px;
+}
+
+.left-inner{
+  height: auto;
+}
+
+
+
+.job-detail-header .inner-info {
+    padding-left: 30px;
+}
+
+
+.job-detail-header .job-detail-title {
+    font-size: 32px;
+    margin: 0 0 5px;
+    line-height: 1.1;
+}
+
+.text-theme {
+    color: #82b440 !important;
+    font-weight: 700;
+    padding-left: 1%;
+}
+
+.job-detail-header .job-metas {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.job-metas > div {
+    display: inline-block;
+    margin-right: 25px;
+}
+.job-metas > div:last-child {
+    margin-right: 0;
+}
+
+.job-detail-buttons .deadline-time {
+    color: #82b440;
+}
+
+.job-detail-buttons [class*="deadline"] {
+    font-size: 23px;
+    text-align: center;
+    margin: 0 0 10px;
+    margin-top: 5%;
+}
+
+
+.btn-apply{
+  background-color: #82B440;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 30px 10px;
+    width: 100%;
+}
+
+.col-sm-4{
+  width: 100%;
+}
+
+
+.content-job-details{
+  margin: 3%;
+}
+
+.title-detail-job{
+  font-size: 28px;
+}
+
+.inner{
+  font-size: 22px;
+}
+
+.job-detail-detail .icon i{
+    color: #82b440;
+    font-size: 40px;
+    float: left;
+}
+
+.job-detail-detail .text {
+    font-size: 26px;
+    color: #221f1f;
+}
+
+.socials-apply .title {
+    text-align: center;
+    margin: 0 0 12px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 5%;
+    text-transform: uppercase;
+} 
+
+.socials-apply .inner a {
+        color: #fff;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    text-decoration: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    height: 50px;
+}
+
+.title{
+  font-size: 24px;
+}
+
+.apus-social-share a {
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    font-size: 22px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    color: #b6b6b6;
+    /* padding-left: 16%; */
+}
+}
+
+
+
+
+
+
+
+  /*For iPads*/
+  
+  @media (min-width:700px) and (max-width: 1200px) and (orientation: portrait) {
+  
+  .topnav {
+  overflow: hidden;
+  background-color: #333;
+  /*background-color: red;*/
+  width: 155%;
+}
+
+.topnav a {
+  margin: 2%;
+  margin-left: 3%;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.careerup-logo{
+  width: 25%;
+  float: left;
+  padding-top: 1%;
+  padding-left: 5%;
+}
+
+.button {
+        background-color: #333;
+        border: 0.3px solid gray;
+        color: #C0C0C0;
+        /*padding: 16px 32px;*/
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        /*margin: 4px 2px;*/
+        /*transition-duration: 0.4s;*/
+        cursor: pointer;      
+      }
+
+    .button:hover{
+          border: 0.3px solid white;
+          color: white;
+    }
+
+
+  .footer{
+      background-color: #333;
+      width: 155%; 
+      /*height: 590px;*/
+      height: 100%;
+
+    }
+
+    .footer h4{
+      float: center;
+      margin-left: 50px;
+      margin-top: 50px;
+      font-size: 22px;
+      color:white;
+    }
+
+    .footer-content{
+      padding-left: 50px;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .footer-content a{
+      text-decoration: none;
+    }
+
+    .footer a{
+      color: gray;
+    }
+
+    .footer-newletter p{
+        margin-left: 50px; 
+        color: white;
+        width: 280px;
+      }
+
+      .email-text{
+        background-color: black;
+        color:white; 
+        padding: 5px;
+        border-radius: 4px;
+        margin-left: 50px;
+        height: 35px;
+        width: 65%; 
+    }
+
+    .email-send-btn{
+    background-color: #78AB46;
+    height: 35px; 
+    width: 44px;
+     border-radius: 4px;
+  }
+
+  .footer-flex {
+  display:flex;
+  }
+.footer-flex div {
+  flex:1;
+  /*margin:5px;  need some space ?*/
+  }
+
+  .footer-bottom-flex {
+  display:flex;
+  border-top: 1px solid gray;
+  }
+.footer-bottom-flex div {
+  flex:1;
+  /*margin:5px;  need some space ?*/
+  }
+
+
+
+  .footer-bottom-img{
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .footer-bottom-flex #follow-us{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .social-media-icon a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        text-align: center;
+        display: inline-block;
+        color: #707070;
+        background: #353535;
+        border-radius: 4px;
+      /*    -webkit-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;*/
+      }
+
+      .social-media-icon ul{
+        display: inline-block;
+        /*padding: 10px;*/
+      }
+
+          .social-media-icon li{
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+        .social-media-icon a:hover{
+          color: #707070;
+        background: #353535;
+        }
+
+        #copyright{
+          color: white;
+          font-size: 18px;
+          text-align: center;
+          padding-top: 30px;
+          padding-right: 25px;
+        }
+
+
+      #top-up-button {
+        display: inline-block;
+        /*background-color: #FF9800;*/
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        visibility: hidden;
+      }
+
+      #top-up-button::after {
+        content: url("top-up-rocket-icon.png");
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        /*color: #fff;*/
+        color: green;
+      }
+      
+      #top-up-button:hover {
+        cursor: pointer;
+      }
+      
+      #top-up-button:active {
+        /*background-color: #555;*/
+      }
+      
+      #top-up-button.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+       .card {
+      background-color: white;
+      border-radius: 14px;
+      /*padding: 1rem 2rem;*/
+      /*min-width: 250px;*/
+      /*max-width: 630px;*/
+      box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
+      /*width: 150%;*/
+      width: auto;
+      transition: all 0.6s;
+      /*margin: 2.5rem 1rem;*/
+      }
+
+      .cards{
+        margin-left: 30%;
+        width: 140%;
+      }
+
+      .search-block{
+        margin-left: 30%;
+        width: 120%;
+      }
+
+
+      .login-text{
+        font-size: 19px;
+      }
+
+      .btn-apply {
+    background-color: #82B440;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    font-size: 26px;
+    padding: 30px 10px;
+    width: 100%;
+  }
+
+  .socials-apply .title {
+    text-align: center;
+    margin: 0 0 12px;
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 5%;
+    text-transform: uppercase;
+  }
+
+  .socials-apply .inner {
+    margin-left: -7px;
+    margin-right: -7px;
+}
+
+.socials-apply .inner > div {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-bottom: 14px;
+    width: 50%;
+    float: left;
+}
+
+
+.socials-apply .inner a {
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 28px;
+    text-decoration: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    height: 60px;
+}
+
+} 
+
+
+
+  /*For iPads*/
+  
+  @media (min-width:700px) and (max-width: 1200px) and (orientation: landscape) {
+  
+  .topnav {
+  overflow: hidden;
+  background-color: #333;
+  /*background-color: red;*/
+  width: 155%;
+}
+
+.topnav a {
+      margin: 2%;
+    /* margin-left: 3%; */
+    font-size: 25px;
+    padding-left: 1%;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.careerup-logo{
+  width: 25%;
+  float: left;
+  padding-top: 1%;
+  padding-left: 5%;
+}
+
+.button {
+        background-color: #333;
+        border: 0.3px solid gray;
+        color: #C0C0C0;
+        /*padding: 16px 32px;*/
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        /*margin: 4px 2px;*/
+        /*transition-duration: 0.4s;*/
+        cursor: pointer;      
+      }
+
+    .button:hover{
+          border: 0.3px solid white;
+          color: white;
+    }
+
+
+  .footer{
+      background-color: #333;
+      width: 155%; 
+      /*height: 590px;*/
+      height: 100%;
+
+    }
+
+    .footer h4{
+      float: center;
+      margin-left: 50px;
+      margin-top: 50px;
+      font-size: 22px;
+      color:white;
+    }
+
+    .footer-content{
+      padding-left: 50px;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .footer-content a{
+      text-decoration: none;
+    }
+
+    .footer a{
+      color: gray;
+    }
+
+    .footer-newletter p{
+        margin-left: 50px; 
+        color: white;
+        width: 280px;
+      }
+
+      .email-text{
+        background-color: black;
+        color:white; 
+        padding: 5px;
+        border-radius: 4px;
+        margin-left: 50px;
+        height: 35px;
+        width: 65%; 
+    }
+
+    .email-send-btn{
+    background-color: #78AB46;
+    height: 35px; 
+    width: 44px;
+     border-radius: 4px;
+  }
+
+  .footer-flex {
+  display:flex;
+  }
+.footer-flex div {
+  flex:1;
+  /*margin:5px;  need some space ?*/
+  }
+
+  .footer-bottom-flex {
+  display:flex;
+  border-top: 1px solid gray;
+  }
+.footer-bottom-flex div {
+  flex:1;
+  /*margin:5px;  need some space ?*/
+  }
+
+
+
+  .footer-bottom-img{
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .footer-bottom-flex #follow-us{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .social-media-icon a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        text-align: center;
+        display: inline-block;
+        color: #707070;
+        background: #353535;
+        border-radius: 4px;
+      /*    -webkit-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;*/
+      }
+
+      .social-media-icon ul{
+        display: inline-block;
+        /*padding: 10px;*/
+      }
+
+          .social-media-icon li{
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+        .social-media-icon a:hover{
+          color: #707070;
+        background: #353535;
+        }
+
+        #copyright{
+          color: white;
+          font-size: 18px;
+          text-align: center;
+          padding-top: 30px;
+          padding-right: 25px;
+        }
+
+
+      #top-up-button {
+        display: inline-block;
+        /*background-color: #FF9800;*/
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        visibility: hidden;
+      }
+
+      #top-up-button::after {
+        content: url("top-up-rocket-icon.png");
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        /*color: #fff;*/
+        color: green;
+      }
+      
+      #top-up-button:hover {
+        cursor: pointer;
+      }
+      
+      #top-up-button:active {
+        /*background-color: #555;*/
+      }
+      
+      #top-up-button.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+             .container2{
+          margin-right: auto;
+          /*background-color: pink;*/
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 155%;
+    }
+      .col-sm-8{
+        /*background-color: pink;*/
+        width: 200%;
+        padding-left: 4%;
+      }
+      .job-detail-header{
+        padding: 20px 0;
+        position: relative;
+        z-index: 1;
+        padding: 80px 0 50px;
+      }
+
+      .flex-middle-sm {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.flex-middle {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.job-detail-thumbnail {
+    padding: 40px 20px;
+    width: 190px;
+}
+
+.job-detail-header .link-more {
+    /*margin-top: 10px;*/
+    font-size: 18px;
+}
+
+.left-inner{
+  height: auto;
+}
+
+
+
+.job-detail-header .inner-info {
+    padding-left: 30px;
+}
+
+
+.job-detail-header .job-detail-title {
+    font-size: 32px;
+    margin: 0 0 5px;
+    line-height: 1.1;
+}
+
+.text-theme {
+    color: #82b440 !important;
+    font-weight: 700;
+    padding-left: 1%;
+}
+
+.job-detail-header .job-metas {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.job-metas > div {
+    display: inline-block;
+    margin-right: 25px;
+}
+.job-metas > div:last-child {
+    margin-right: 0;
+}
+
+.job-detail-buttons .deadline-time {
+    color: #82b440;
+}
+
+.job-detail-buttons [class*="deadline"] {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 0 10px;
+    margin-top: 5%;
+}
+
+
+.btn-apply{
+  background-color: #82B440;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 14px 10px;
+    width: 100%;
+}
+
+.col-sm-4{
+  width: 100%;
+}
+
+
+
+}
+
+
+
+/* iPad Pro*/
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait){
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+      /* background-color: red; */
+      width: 155%;
+    }
+
+    .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 28px;
+    margin-left: 3%;
+    padding-top: 1.8%;
+    }
+    
+    .login-text{
+      font-size: 28px;
+    }
+
+    .login-bar{
+      height: 200px;
+    }
+
+    .login-bar h2{
+      font-size: 42px;
+    }
+
+    .login-bar li a {
+      text-decoration: none;
+      color: black;
+      font-size: 32px;
+    }
+
+           .container2{
+          margin-right: auto;
+          /*background-color: pink;*/
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 155%;
+    }
+      .col-sm-8{
+        /*background-color: pink;*/
+        width: 200%;
+        padding-left: 4%;
+      }
+      .job-detail-header{
+        padding: 20px 0;
+        position: relative;
+        z-index: 1;
+        padding: 80px 0 50px;
+      }
+
+      .flex-middle-sm {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.flex-middle {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.job-detail-thumbnail {
+    padding: 40px 20px;
+    width: 190px;
+}
+
+.job-detail-header .link-more {
+    /*margin-top: 10px;*/
+    font-size: 18px;
+}
+
+.left-inner{
+  height: auto;
+}
+
+
+
+.job-detail-header .inner-info {
+    padding-left: 30px;
+}
+
+
+.job-detail-header .job-detail-title {
+    font-size: 32px;
+    margin: 0 0 5px;
+    line-height: 1.1;
+}
+
+.text-theme {
+    color: #82b440 !important;
+    font-weight: 700;
+    padding-left: 1%;
+}
+
+.job-detail-header .job-metas {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.job-metas > div {
+    display: inline-block;
+    margin-right: 25px;
+}
+.job-metas > div:last-child {
+    margin-right: 0;
+}
+
+.job-detail-buttons .deadline-time {
+    color: #82b440;
+}
+
+.job-detail-buttons [class*="deadline"] {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 0 10px;
+    margin-top: 5%;
+}
+
+
+.btn-apply{
+  background-color: #82B440;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 14px 10px;
+    width: 100%;
+}
+
+.col-sm-4{
+  width: 100%;
+}
+
+    .footer {
+    background-color: #333;
+    width: 155%;
+    /* height: 590px; */
+    height: 100%;
+    }
+
+    .footer h4{
+      float: center;
+      margin-left: 50px;
+      margin-top: 50px;
+      font-size: 28px;
+      color:white;
+    }
+
+    .footer-content{
+      padding-left: 50px;
+      font-size: 20px;
+      line-height: 1.8;
+    }
+
+     .footer-content a{
+      text-decoration: none;
+    }
+
+    .footer a{
+      color: gray;
+    }
+
+    .footer-newletter p{
+        margin-left: 50px; 
+        color: white;
+        width: 280px;
+        font-size: 16px;
+      }
+
+        .footer-bottom-flex #follow-us{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .social-media-icon a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        text-align: center;
+        display: inline-block;
+        color: #707070;
+        background: #353535;
+        border-radius: 4px;
+      }
+
+      .social-media-icon ul{
+        display: inline-block;
+        padding: 15px;
+        margin-left: 9%;
+      }
+
+          .social-media-icon li{
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+        .social-media-icon a:hover{
+          color: #707070;
+        background: #353535;
+        }
+
+       #copyright{
+          color: white;
+          font-size: 18px;
+          text-align: center;
+          padding-top: 30px;
+          padding-right: 25px;
+        }
+
+        .socials-apply .inner a {
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    text-decoration: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+}
+
+
+</style>
+<body>
+  <a id="top-up-button"></a>
+  <div class="topnav" id="myTopnav" >
+    <img class="careerup-logo" src="careerup-logo.png" onclick=" location.href='index.html' ">
+         <a href="categories-page.html" id="topnav-1">Categories</a>
+        <a href="cities-page.html">Cities</a>
+        <a href="#myFooter">About Us</a>
+        <a href="#"><i class="fa fa-bell"></i></a>
+        <a href="login-page.html">
+          <button type="button" class="button btn-login"><div class="login-text">Login/Register</div></button>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+  </div> 
+
+  <div class="container2">
+    <div class="container2-inner-div">
+    <article>
+      <div class="job-detail-header">
+        <div class="row flex-middle-sm">
+          <div class="col-sm-8 col-xs-12">
+            <div class="flex-middle">
+                <div class="left-inner">
+                    <div class="job-detail-thumbnail">
+                        <a href="#">
+                        <img width="100%" height="100px" src="https://apusthemes.com/wp-demo/careerup/wp-content/uploads/2019/05/brand7-180x75.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt=""></a>
+                    </div>
+
+                    <div class="clearfix link-more text-center">
+                        <a href="#" class="btn-link-job">View all jobs <i class='fa fa-arrow-right'></i></a>
+                    </div>
+                </div>
+                
+                <div class="inner-info">
+                  <a class="text-theme type-job" href="#">Part Time</a>
+                                                                            
+                  <div class="job-title-wrapper">
+                    <h1 class="job-detail-title">Junior Digital Graphic Designer</h1>            
+                  </div>
+                        
+                  <div class="job-date-author">
+                    Posted 1 year ago by 
+                    <a class="text-theme" href="https://apusthemes.com/wp-demo/careerup/employer/michael-ltd/">Michael Ltd</a> 
+                  </div>
+                  
+                  <div class="job-metas">
+                    <div class="job-location"><i class="flaticon-location-pin"></i>Mumbai, Maharashtra</div>
+                    <div class="job-salary"><i class="flaticon-price"></i>₹<span class="price-text">5000</span> - ₹ <span class="price-text">7000</span> per month</div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-xs-12">
+            <div class="job-detail-buttons">
+                <div class="wrapper-apply flex-middle">
+                    <a href="#" class="button btn-apply ">Apply Now <i class='fa fa-arrow-right'></i></a>
+
+                  <!-- <div class="deadline-time">Application ends: <strong>December 15, 2022</strong></div> -->
+                </div>
+                <div class="deadline-time">Application ends: <strong>December 15, 2022</strong></div>
+            </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="row content-job-details">
+
+        <div class="left-content col-xs-12 col-md-8">
+
+              
+        <!-- job description -->
+        <div class="job-detail-description">
+          <h3 class="title-detail-job">Job Description</h3>
+          <div class="inner">
+            
+  <p>Due to ongoing growth, this fun &amp; energetic International corporate based on the outskirts of Oxford, is seeking a UX/UI Designer to join an innovative team, focused on delivering exciting User Experiences and great functionality, across both Web &amp; Mobile platforms.</p>
+
+
+
+  <p>The UX/UI Designer will be working with a world-class team of designers, engineers, and product managers to develop innovative user experiences that will shape the industry’s pioneering products.</p>
+
+
+
+  <div class="wp-block-spacer" style="height: 20px;" aria-hidden="true">&nbsp;</div>
+
+
+
+  <h3 class="title">Responsibilities Include:</h3>
+
+
+
+  <ul>
+  <li>Partnering with product and engineering to translate business and user goals into elegant and practical designs that can deliver on key business and user metrics</li>
+  <li>Collaborating with internal stakeholders and team members to brainstorm new products, features and functionalities that enhance the mobile and web experiences</li>
+  <li>Giving and soliciting feedback with designers</li>
+  </ul>
+
+
+
+  <div class="wp-block-spacer" style="height: 30px;" aria-hidden="true">&nbsp;</div>
+
+
+
+  <h3 class="title">Background, Skills &amp; Experience</h3>
+
+
+
+  <ul>
+  <li>Circa 3+ years experience designing for web and mobile platforms</li>
+  <li>Through your online portfolio, you are able to share your UX/UI design capabilities by showcasing your design chops and demonstrates originality, innovation and strong problem solving skills</li>
+  <li>Prototyping skills – experience with Axure or similar is useful</li>
+  <li>Demonstrable experience with end-to-end product design, including consumer product/s</li>
+  <li>Talent for managing multiple projects simultaneously, from concept through to completion</li>
+  <li>You are comfortable designing within iOS and Android native guideles, and have portfolio examples to show it</li>
+  <li>Excellent communicator who has conviction to champion of view, but can also successfully collaborate with others</li>
+  <li>A Degree in Design or related field is preferred</li>
+  <li>You enjoy a fast paced and dynamic working environment</li>
+  </ul>
+
+
+
+
+      </div>
+</div>
+</div>
+
+
+<div class="col-md-4 col-xs-12">
+          <aside class="widget widget_apus_job_info"><h2 class="widget-title"><span>Job Information</span></h2><div class="job-detail-detail in-sidebar">
+    <ul class="list">
+                    <li>
+                <div class="icon">
+                    <!-- <i class="flaticon-money"></i> -->
+                    <i class="fa fa-money"></i>
+                </div>
+                <div class="details">
+                    <div class="text">Offered Salary</div>
+                    <div class="value">₹<span class="price-text">5000</span> - ₹<span class="price-text">7000</span> per month</div>
+                </div>
+            </li>
+            <li>
+              <div class="icon">
+                  <!-- <i class="flaticon-gender"></i> -->
+                  <i class="fa fa-venus-mars"></i>
+              </div>
+              <div class="details">
+                <div class="text">Gender</div>
+                  <div class="value">Both</div>
+              </div>
+              </li>
+              
+              <li>
+                <div class="icon">
+                  <!-- <i class="flaticon-line-chart"></i> -->
+                  <i class="fa fa-line-chart"></i>
+                </div>
+                <div class="details">
+                  <div class="text">Industry</div>
+                    <div class="value"> Html &amp; Css, Designer Graphics</div>
+                </div>
+              </li>
+              
+              <li>
+                <div class="icon">
+                  <!-- <i class="flaticon-paper"></i> -->
+                  <i class="fa fa-graduation-cap"></i>
+                </div>
+              
+                <div class="details">
+                  <div class="text">Qualification</div>
+                    <div class="value"> Certificate, Associate Degree</div>
+                </div>
+              </li>
+                
+              <li>
+                <div class="icon">
+                  <!-- <i class="flaticon-controls"></i> -->
+                  <i class="fa fa-filter"></i>
+                </div>
+                <div class="details">
+                  <div class="text">Career Level</div>
+                    <div class="value"> Manager, Student</div>
+                  </div>
+              </li>
+    </ul>
+</div></aside><aside class="widget widget_apus_job_social_share"><div class="widget-job-detail-social">
+    <div class="apus-social-share">
+    <div class="bo-social-icons bo-sicolor social-radius-rounded">
+    <span class="title">Share Link: </span>
+    
+
+          <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" title="Google"><i class="fa fa-google"></i></a>
+          <a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+          <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+    
+      </div>
+</div>  </div></aside>
+<aside class="widget widget_apus_job_buttons"><div class="job-detail-buttons">
+          <div class="deadline-time">Application ends: <strong>December 15, 2022</strong></div>
+                  <a href="#" class="btn btn-apply">
+                    Apply Now
+                    <i class='fa fa-arrow-right'></i>
+                  </a>
+            <div class="job-apply-internal-required-wrapper" style="display: none;">
+    <div class="msg-inner">Please login with "Candidate" to apply</div>
+  </div>
+
+                    <div class="socials-apply clearfix">
+                <div class="title">OR apply with</div>
+                <div class="inner">
+                          <div class="facebook-apply-btn-wrapper">
+        <a class="facebook-apply-btn" href="#" data-job_id="1322"><i class="fa fa-facebook"></i> Facebook</a>
+      </div>
+              <div class="google-apply-btn-wrapper">
+            <a class="google-apply-btn" href="#"  data-job_id="1322"><i class="fa fa-google"></i> Google</a>
+        </div>
+                <div class="linkedin-apply-btn-wrapper">
+            <a class="linkedin-apply-btn" href="#"  data-job_id="1322"><i class="fa fa-linkedin"></i> LinkedIn</a>
+        </div>
+                <div class="twitter-apply-btn-wrapper">
+            <a class="twitter-apply-btn" href="#"  data-job_id="1322"><i class="fa fa-twitter"></i> Twitter</a>
+        </div>
+                        </div>
+            </div>
+                
+        
+</div></aside>        </div>
+</div>
+
+    </article>
+  </div>
+    
+  </div >
+  
+
+  
+<div class="footer" id="myFooter">
+<div class="footer-flex">
+  
+
+    <a href="#" style="text-decoration: none;">
+    <div class="footer-job-by">
+       <h4 style=" "> Job By Places </h4>
+      
+          <div class="footer-content">
+            <a href="#">Job In Delhi</a><br>
+            <a href="#">Job In Bangalore</a><br>
+            <a href="#">Job In Mumbai</a><br>
+            <a href="#">Job In Hyderabad</a><br>
+            <a href="#">Job In Chennai</a><br>
+            <a href="#">Job In International</a><br><br>
+          </div> 
+  </div>
+
+  <div class="footer-job-by">
+      <h4 style=" "> Job By Categories </h4>
+          
+          <div class="footer-content">
+            <a href="#">Part-Time</a><br>
+            <a href="#">Engineering</a><br>
+            <a href="#">NGO</a><br>
+            <a href="#">MBA</a><br>
+            <a href="#">Design</a><br>
+            <a href="#">Media</a><br>
+          </div> 
+  </div>
+  
+  <div class="footer-job-by">
+      <h4 style=" "> About CareerUp </h4>
+          
+          <div class="footer-content">
+            <a href="#">About Us</a><br>
+            <a href="#">Our Servies</a><br>
+            <a href="#">Terms & Conditions</a><br>
+            <a href="#">Contact Us</a><br>
+          </div> 
+  </div>
+
+  <div>
+     <div class="footer-newletter">
+            <h4> Newsletter </h4>
+            <p >Subscribe to CareerUp Pacific newsletter to get
+              the latest jobs posted,candidates,and other latest news stay updated.</p>
+            <form action="..." style="padding-bottom: 20px;">
+              <input class="email-text" type="email" placeholder="Enter your email address" name="emails">
+              <button class="email-send-btn"><i class="fa fa-paper-plane" style="font-size: 18px;color: white"></i></button>
+            </form>
+          </div>
+  </div>
+
+</div>
+
+<div class="footer-bottom-flex">
+
+      <div class="border-line">
+       <div class="footer-bottom-img">
+              <img src="careerup-logo.png">  
+        </div>
+      </div>
+          <p id="follow-us"> Follow Us</p>  
+
+              <div class="social-media-icon">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-google"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                  </li>
+
+
+                </ul>  
+              </div>
+            
+            <p id="copyright" > <span>&#169;</span> 2020 CareerUp. All Rights Reserved. </p>  
+</div>
+</div>
+
+
+
+  <script>
+
+    function myFunction() {
+     var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+         $('html, body').animate({scrollTop:0}, '300');
+       
+      } else {
+        x.className = "topnav";
+        
+      }
+    }
+
+function myFunction() {
+     var x = document.getElementById("myTopnav");
+
+      if (x.className === "topnav") {
+        x.className += " responsive";
+       
+         $('html, body').animate({scrollTop:0}, '300');
+        
+      } else {
+        x.className = "topnav";
+
+      }
+    }
+
+
+
+    var btn = $('#top-up-button');
+
+    $(window).scroll(function() {
+    if ($(window).scrollTop() > 200) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+    });
+
+    btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+    });
+
+
+
+  $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+    
+    if ($('.topnav').hasClass('responsive')) {
+            $(".topnav").toggleClass('responsive')
+          }
+    if ($('.bg-img').hasClass('responsive')) {
+            $(".bg-img").toggleClass('responsive')
+          }
+    });
+
+
+  
+  </script>
+
+</body>
+
+
+</html>
